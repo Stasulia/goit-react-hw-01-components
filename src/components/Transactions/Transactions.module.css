@@ -1,0 +1,27 @@
+.transactionHistory {
+  padding: 20px;
+}
+
+.transactionTable {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  border: 2px;
+  border-style: double;
+  text-align: center;
+  background-color: white;
+}
+.head {
+  border-bottom: 5px;
+  background-color: blueviolet;
+}
+
+.transactionTable .headItem,
+.transactionTable .dataItem {
+  padding: 10px;
+  border: 1px solid black;
+}
+.headItem {
+  font-size: 20px;
+}
