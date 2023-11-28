@@ -6,15 +6,17 @@ export const FriendItem = ({ avatar, name, isOnline, id }) => {
   // const isOnline = id % 2 === 0;
   return (
     <li className={css.item}>
-      <span classNames={isOnline ? css.onLine : css.offLine}></span>
+      <span className={`${css.status} ${isOnline ? css.onLine : css.offLine}`}>
+        {isOnline}
+      </span>
       <img className={css.avatar} src={avatar} alt={name} width="48" />
       <p className={css.name}>{name}</p>
     </li>
   );
 };
 
-// FriendItem.PropTypes = {
-//   avatar: PropTypes.string.isRequired,
-//   name: PropTypes.string.isRequired,
-//   isOnline: PropTypes.bool,
-// };
+FriendItem.propTypes = {
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  isOnline: PropTypes.bool,
+};

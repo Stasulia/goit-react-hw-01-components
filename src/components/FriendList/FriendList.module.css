@@ -15,26 +15,29 @@
 }
 .item {
   display: flex;
-  justify-content: flex-start;
-  gap: 20px;
+  /* justify-content: center; */
+  gap: 40px;
   align-items: center;
   margin-bottom: 10px;
   padding: 15px;
+  padding-left: 25px;
   border: 3px solid blueviolet;
 }
-
-.name {
-  text-align: center;
-  font-size: 30px;
-}
-
-.onLine {
+.status {
   display: block;
   width: 20px;
   height: 20px;
   border-radius: 50%;
+  background-color: grey;
+}
+.name {
+  text-align: center;
+  font-size: 30px;
+  /* width: 50px; */
+}
+
+.onLine {
   background-color: green;
-  margin-right: 10px;
 }
 .offLine {
   background-color: red;
